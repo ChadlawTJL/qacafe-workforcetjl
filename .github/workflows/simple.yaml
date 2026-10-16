@@ -33,7 +33,7 @@ jobs:
         run: pip install flake8
 
       - name: run flake8
-      - run: flake8
+        run: flake8
 
   package:
     runs-on: ubuntu-latest
@@ -46,7 +46,5 @@ jobs:
       # TODO: Zip the application here
       - name: Zip application files
         uses: xmlking/zip-action@v1.0.2
-        with:
-          filename: 'qa-cafe-app.zip'
-          path: '.' # Zips everything in the repository root
+        run: zip -r qacafe-app.zip
           
