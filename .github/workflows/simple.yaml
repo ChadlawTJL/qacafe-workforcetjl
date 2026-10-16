@@ -45,6 +45,5 @@ jobs:
 
       # TODO: Zip the application here
       - name: Zip application files
-        uses: xmlking/zip-action@v1.0.2
         run: zip -r qacafe-app.zip
           
